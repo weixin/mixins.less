@@ -13,11 +13,11 @@ h1,h2{
 .test-block{
 	height:100px;
 	width:100px;
-	background-color:#000000;
+	background-color:#0091f4;
 	display:block;
 }
 .test-block_white{
-	background-color:#fff;
+	background-color:#0091f4;
 }
 .test-text{
 
@@ -35,13 +35,13 @@ h1,h2{
 	background-repeat:no-repeat;
 }
 .opacity{
-	.opacity(0.2);
+	.opacity(0.5);
 }
 .appearance{
 	.appearance(button)
 }
 .gradient{
-	.gradient(#ff0000,#ff0000,#000000);
+	.gradient(#71e12d,#71e12d,#0091f4);
 }
 .drop-shadow{
 	.drop-shadow(2px,4px,10px,0.8);
@@ -50,27 +50,27 @@ h1,h2{
 	.inner-shadow(2px,4px,10px,0.8);
 }
 .box-shadow{
-	.box-shadow(2px 4px 10px red);
+	.box-shadow(2px 4px 10px #71e12d);
 }
 .transition{
 	.transition(2s, linear);
 	&:hover{
 		width:200px;
-		background-color:red;
+		background-color:#71e12d;
 	}
 }
 .transition-delay{
 	.transition-delay(0.5s);
 	&:hover{
 		width:200px;
-		background-color:red;
+		background-color:#71e12d;
 	}
 }
 .transition-duration{
 	.transition-duration(0.5s);
 	&:hover{
 		width:200px;
-		background-color:red;
+		background-color:#71e12d;
 	}
 }
 .rotation{
@@ -91,7 +91,7 @@ h1,h2{
 
 	border: 5px navy;
 	border-style: dotted double;
-	background: red;
+	background: #71e12d;
 }
 .columns{
 	.columns(40px, 3, 20px, #999, solid, 1px);
