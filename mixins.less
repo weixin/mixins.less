@@ -1,6 +1,6 @@
 //----------------------------
 //
-//  mixins.less v0.1.1
+//  mixins.less v0.1.2
 //  http://mixinsless.com/
 //  Reuse snippets & Cross-browser private properties snippets.
 //----------------------------
@@ -49,7 +49,8 @@
 // -------------------------
 .opacity(@opacity) {
   opacity:@opacity;
-  filter:~"alpha(opacity=@{opacity * 100})";
+  @opacityIE : @opacity * 100;
+  filter:~"alpha(opacity=@{opacityIE})";
 }
 
 // Appearance
@@ -94,11 +95,11 @@
 
 // Animation
 // -------------------------
-.transition(@duration:0.2s, @ease:ease-out) {
-  -webkit-transition: all @duration @ease;
-  -moz-transition: all @duration @ease;
-  -o-transition: all @duration @ease;
-  transition: all @duration @ease;
+.transition(@transition) {
+  -webkit-transition:@transition;
+  -moz-transition:@transition;
+  -o-transition:@transition;
+  transition:@transition;
 }
 .transition-delay(@transition-delay) {
   -webkit-transition-delay:@transition-delay;
@@ -187,12 +188,7 @@
     font-style:@style;
     font-weight:@weight;
     src:url('@{fileName}.eot');
-    src:local('@fontFamily'),
-      url('@{fileName}.eot?#iefix') format('embedded-opentype'),
-      url('@{fileName}.woff') format('woff'),
-      url('@{fileName}.ttf') format('truetype'),
-      url('@{fileName}.svg#@{fontFamily}') format('svg'),
-      url("@{fileName}.otf") format('opentype');
+    src:local('@fontFamily'), url('@{fileName}.eot?#iefix') format('embedded-opentype'), url('@{fileName}.woff') format('woff'), url('@{fileName}.ttf') format('truetype'), url('@{fileName}.svg#@{fontFamily}') format('svg'), url("@{fileName}.otf") format('opentype');
   }
 }
 
@@ -253,4 +249,37 @@
   display:-webkit-box;
   -webkit-line-clamp:@line; /* number of lines to show */
   -webkit-box-orient:vertical;
+}
+
+// Creates a wrapper for a series of columns
+// -------------------------
+.lay-row() {
+  // Negative margin the row out to align the content of columns
+  margin-left:  (@grid-gutter-width / -2);
+  margin-right: (@grid-gutter-width / -2);
+  // Then clear the floated columns
+  .clearfix();
+}
+
+// Generate the columns
+// -------------------------
+.lay-column(@columns) {
+  @media (min-width: @grid-float-breakpoint) {
+    float: left;
+    // Calculate width based on number of columns available
+    width: percentage(@columns / @grid-columns);
+  }
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Set inner padding as gutters instead of margin
+  padding-left:  (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+}
+
+// Generate the column offsets
+// -------------------------
+.lay-column-offset(@columns) {
+  @media (min-width: @grid-float-breakpoint) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
 }
