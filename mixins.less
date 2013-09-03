@@ -62,8 +62,8 @@
 
 // Gradient
 // -------------------------
-.gradient(@color: #F5F5F5, @start: #EEEEEE, @stop: #FFFFFF) {
-  background:@color;
+.gradient(@start: #000000, @stop: #FFFFFF) {
+  background:(@start + @stop)/2;
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0, @start), color-stop(1, @stop));
   background:-ms-linear-gradient(top, @start, @stop);
   background:-moz-linear-gradient(center top, @start 0%, @stop 100%);
@@ -95,6 +95,12 @@
 
 // Animation
 // -------------------------
+.animation(@animation) {
+  -webkit-animation:@animation;
+  -moz-animation:@animation;
+  animation:@animation;
+}
+
 .transition(@transition) {
   -webkit-transition:@transition;
   -moz-transition:@transition;
@@ -112,6 +118,14 @@
   -moz-transition-duration:@transition-duration;
   -o-transition-duration:@transition-duration;
   transition-duration:@transition-duration;
+}
+
+// Transform
+// -------------------------
+.transform(@arguments) {
+  -webkit-transform:@arguments;
+  -moz-transform:@arguments;
+  transform:@arguments;
 }
 
 // Transform rotation
@@ -282,4 +296,34 @@
   @media (min-width: @grid-float-breakpoint) {
     margin-left: percentage((@columns / @grid-columns));
   }
+}
+
+// Alpha background
+// -------------------------
+.alpha-background(@rgb:#000,@alpha:.5){
+  @rgba-color:fade(@rgb,@alpha*100);
+  @argb-color:argb(@rgba-color);
+  background-color:@rgba-color;
+  filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{argb-color}', endColorstr='@{argb-color}', GradientType=0)";
+  zoom:1;
+}
+
+// Controls the selection model of an element.
+// -------------------------
+.user-select(@arguments:none){
+  -webkit-user-select: @arguments;
+  -moz-user-select: @arguments;
+  -ms-user-select: @arguments;
+  user-select: @arguments;
+}
+
+// Flexbox display
+// -------------------------
+// flex or inline-flex
+.flex-display(@display: flex) {
+  display: ~"-webkit-@{display}";
+  display: ~"-moz-@{display}";
+  display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+  display: ~"-ms-@{display}"; // IE11
+  display: @display;
 }
