@@ -84,6 +84,14 @@
 	box-shadow:inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
 }
 
+// Box inner border
+// -------------------------
+.inner-border(@width: 1px, @color: #000) {
+  -webkit-box-shadow:inset 0 0 0 @width @color;
+  -moz-box-shadow:inset 0 0 0 @width @color;
+  box-shadow:inset 0 0 0 @width @color;
+}
+
 // Box shadow default
 // -------------------------
 .box-shadow(@arguments) {
