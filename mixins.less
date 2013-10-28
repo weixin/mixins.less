@@ -1,6 +1,6 @@
 //----------------------------
 //
-//  mixins.less v0.1.2
+//  mixins.less v0.1.5
 //  http://mixinsless.com/
 //  Reuse snippets & Cross-browser private properties snippets.
 //----------------------------
@@ -65,7 +65,6 @@
 .gradient(@start: #000000, @stop: #FFFFFF) {
   background:(@start + @stop)/2;
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0, @start), color-stop(1, @stop));
-  background:-ms-linear-gradient(top, @start, @stop);
   background:-moz-linear-gradient(center top, @start 0%, @stop 100%);
 }
 
@@ -244,15 +243,16 @@
 // -------------------------
 .word-break() {
   word-break:break-all;
-  word-wrap:break-word
+  word-wrap:break-word;
+    white-space: normal;
 }
 
 // No wrap
 // -------------------------
 .no-wrap() {
-  word-break:normal;
-  word-wrap:keep-all;
-  word-spacing:nowrap;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: nowrap;
 }
 
 // Text overflow with(...)
@@ -312,7 +312,7 @@
   @rgba-color:fade(@rgb,@alpha*100);
   @argb-color:argb(@rgba-color);
   background-color:@rgba-color;
-  filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{argb-color}', endColorstr='@{argb-color}', GradientType=0)";
+  filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{argb-color}', endColorstr='@{argb-color}', GradientType=0)\9";
   zoom:1;
 }
 
@@ -331,7 +331,6 @@
 .flex-display(@display: flex) {
   display: ~"-webkit-@{display}";
   display: ~"-moz-@{display}";
-  display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
-  display: ~"-ms-@{display}"; // IE11
   display: @display;
 }
+
