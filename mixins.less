@@ -337,3 +337,98 @@
   display: @display;
 }
 
+// triangle
+// -------------------------
+.triangle(@direction: down, @size: 10px, @color: #000){
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.triangle(@direction: down, @size: 10px, @color: #000) when (@direction = down){
+  border-color: @color transparent transparent transparent;
+  border-style: solid dashed dashed dashed;
+  border-width: @size @size 0 @size;
+}
+.triangle(@direction: down, @size: 10px, @color: #000) when(@direction = left){
+  border-color: transparent @color transparent transparent;
+  border-style: dashed solid dashed dashed;
+  border-width: @size @size @size 0;
+}
+.triangle(@direction: down, @size: 10px, @color: #000) when(@direction = up){
+  border-color: transparent transparent @color transparent;
+  border-style: dashed dashed solid dashed;
+  border-width: 0 @size @size @size;
+}
+.triangle(@direction: down, @size: 10px, @color: #000) when(@direction = right){
+  border-color: transparent transparent transparent @color;
+  border-style: dashed dashed dashed solid;
+  border-width: @size 0 @size @size;
+}
+
+// triangle-double
+// -------------------------
+.triangle-double(@direction: down, @size: 10px, @color: #000, @borderColor: #c00){
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }
+}
+.triangle-double(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = down){
+  border-color: @borderColor transparent transparent transparent;
+  border-style: solid dashed dashed dashed;
+  border-width: @size @size 0 @size;
+  &:after{
+    left: -@size;
+    top: -(@size+1);
+    border-color: @color transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    border-width: @size @size 0 @size;
+  }
+}
+.triangle-double(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = left){
+  border-color: transparent @borderColor transparent transparent;
+  border-style: dashed solid dashed dashed;
+  border-width: @size @size @size 0;
+  &:after{
+    left: 1px;
+    top: -@size;
+    border-color: transparent @color transparent transparent;
+    border-style: dashed solid dashed dashed;
+    border-width: @size @size @size 0;
+  }
+}
+.triangle-double(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = up){
+  border-color: transparent transparent @borderColor transparent;
+  border-style: dashed dashed solid dashed;
+  border-width: 0 @size @size @size;
+  &:after{
+    left: -@size;
+    top: 1px;
+    border-color: transparent transparent @color transparent;
+    border-style: dashed dashed solid dashed;
+    border-width: 0 @size @size @size;
+  }
+}
+.triangle-double(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = right){
+  border-color: transparent transparent transparent @borderColor;
+  border-style: dashed dashed dashed solid;
+  border-width: @size 0 @size @size;
+  &:after{
+    left: -(@size+1);
+    top: -@size;
+    border-color: transparent transparent transparent @color;
+    border-style: dashed dashed dashed solid;
+    border-width: @size 0 @size @size;
+  }
+}
+
