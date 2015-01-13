@@ -1,20 +1,16 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\000033}}
 body {
   background-image: url(images/bg.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\000036}}
 h1,
 h2 {
   text-align: center;
   margin-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000311}}
 pre {
   border: none!important;
   background-color: transparent!important;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000316}}
 .tips {
   text-align: right;
   display: inline-block;
@@ -24,18 +20,15 @@ pre {
   padding: 0 5px;
   background-color: #daedfa;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000324}}
 .test-block {
   height: 100px;
   width: 100px;
   background-color: #0091f4;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000330}}
 .test-block_white {
   background-color: #0091f4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000337}}
 .rounded {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -44,7 +37,6 @@ pre {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000340}}
 .border-radius {
   -webkit-border-top-left-radius: 0;
   -webkit-border-top-right-radius: 10px;
@@ -62,7 +54,6 @@ pre {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000343}}
 .background-size {
   -webkit-background-size: 50px;
   -moz-background-size: 50px;
@@ -71,95 +62,79 @@ pre {
   background-image: url(http://getimg.in/100x100);
   background-repeat: no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000348}}
 .opacity {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000351}}
 .appearance {
   -webkit-appearance: button;
   appearance: button;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000354}}
 .gradient {
   background: #39b991;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #71e12d), color-stop(1, #0091f4));
   background: -moz-linear-gradient(center top, #71e12d 0%, #0091f4 100%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000357}}
 .drop-shadow {
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000360}}
 .inner-shadow {
   -webkit-box-shadow: inset 2px 4px 10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: inset 2px 4px 10px rgba(0, 0, 0, 0.8);
   box-shadow: inset 2px 4px 10px rgba(0, 0, 0, 0.8);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000363}}
 .inner-border {
   -webkit-box-shadow: inset 0 0 0 5px #ffc0cb;
   -moz-box-shadow: inset 0 0 0 5px #ffc0cb;
   box-shadow: inset 0 0 0 5px #ffc0cb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000366}}
 .box-shadow {
   -webkit-box-shadow: 2px 4px 10px #71e12d;
   -moz-box-shadow: 2px 4px 10px #71e12d;
   box-shadow: 2px 4px 10px #71e12d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000369}}
 .transition {
   -webkit-transition: 2s;
   -moz-transition: 2s;
   -o-transition: 2s;
   transition: 2s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000371}}
 .transition:hover {
   width: 200px;
   background-color: #71e12d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000376}}
 .transition-delay {
   -webkit-transition-delay: 0.5s;
   -moz-transition-delay: 0.5s;
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000378}}
 .transition-delay:hover {
   width: 200px;
   background-color: #71e12d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000383}}
 .transition-duration {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000385}}
 .transition-duration:hover {
   width: 200px;
   background-color: #71e12d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000390}}
 .rotation {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   transform: rotate(20deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000393}}
 .scale {
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
   transform: scale(0.5);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000396}}
 .translate {
   -moz-transform: translate(100px, 0);
   -webkit-transform: translate(100px, 0);
@@ -167,14 +142,12 @@ pre {
   -ms-transform: translate(100px, 0);
   transform: translate(100px, 0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\0000399}}
 .translate3d {
   -webkit-transform: translate3d(200px, 50px, 50px);
   -moz-transform: translate3d(200px, 50px, 50px);
   -o-transform: translate3d(200px, 50px, 50px);
   transform: translate3d(200px, 50px, 50px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003102}}
 .background-clip {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
@@ -184,7 +157,6 @@ pre {
   border-style: dotted double;
   background: #71e12d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003110}}
 .columns {
   -moz-column-width: 40px;
   -moz-column-count: 3;
@@ -205,7 +177,6 @@ pre {
   column-rule-style: solid;
   column-rule-width: 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003113}}
 .font-face {
   font-family: Bilbo;
   font-size: 30px;
@@ -217,22 +188,18 @@ pre {
   src: url('Bilbo-Regular.eot');
   src: local('@fontFamily'), url('Bilbo-Regular.eot?#iefix') format('embedded-opentype'), url('Bilbo-Regular.woff') format('woff'), url('Bilbo-Regular.ttf') format('truetype'), url('Bilbo-Regular.svg#Bilbo') format('svg'), url("Bilbo-Regular.otf") format('opentype');
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003118}}
 .clearfix {
   zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/import-mixins\.less}line{font-family:\00003220}}
 .clearfix:before {
   content: '';
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/import-mixins\.less}line{font-family:\00003224}}
 .clearfix:after {
   content: '';
   display: table;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003121}}
 .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -240,7 +207,6 @@ pre {
   background-color: transparent;
   border: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003124}}
 .word-break {
   width: 200px;
   background-color: #71e12d;
@@ -248,7 +214,6 @@ pre {
   word-wrap: break-word;
   white-space: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003129}}
 .no-wrap {
   width: 200px;
   background-color: #71e12d;
@@ -256,7 +221,6 @@ pre {
   word-wrap: normal;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003134}}
 .text-overflow {
   height: 40px;
   overflow: hidden;
@@ -264,7 +228,6 @@ pre {
   white-space: nowrap;
   max-width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003138}}
 .line-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -273,7 +236,6 @@ pre {
   /* number of lines to show */
   -webkit-box-orient: vertical;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003141}}
 .triangle {
   display: inline-block;
   width: 0;
@@ -285,7 +247,6 @@ pre {
   border-style: solid dashed dashed dashed;
   border-width: 10px 10px 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003144}}
 .triangle-double {
   position: absolute;
   width: 0;
@@ -295,7 +256,6 @@ pre {
   border-style: solid dashed dashed dashed;
   border-width: 10px 10px 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/import-mixins\.less}line{font-family:\00003378}}
 .triangle-double:after {
   content: '';
   position: absolute;
@@ -303,7 +263,6 @@ pre {
   height: 0;
   font-size: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/import-mixins\.less}line{font-family:\00003390}}
 .triangle-double:after {
   left: -10px;
   top: -11px;
@@ -311,12 +270,10 @@ pre {
   border-style: solid dashed dashed dashed;
   border-width: 10px 10px 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003149}}
 .demo-box .col-6 {
   margin-bottom: 10px;
 }
 /* Base styles (regardless of theme) */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003155}}
 .bs-callout {
   margin: 20px auto;
   width: 450px;
@@ -324,36 +281,29 @@ pre {
   padding: 15px 30px 15px 15px;
   border-left: 5px solid #eee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003162}}
 .bs-callout h4 {
   margin-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003165}}
 .bs-callout p:last-child {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003168}}
 .bs-callout code,
 .bs-callout .highlight {
   background-color: #fff;
 }
 /* Themes for different contexts */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003174}}
 .bs-callout-danger {
   background-color: #fcf2f2;
   border-color: #dFb5b4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003178}}
 .bs-callout-warning {
   background-color: #fefbed;
   border-color: #f1e7bc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003182}}
 .bs-callout-info {
   background-color: #f0f7fd;
   border-color: #d0e3f0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/littledu\/mixins\.less\/css\/style\.less}line{font-family:\00003187}}
 .footer {
   border-top: 1px solid #E5E5E5;
   padding: 20px;
