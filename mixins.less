@@ -368,9 +368,9 @@
   border-width: @size 0 @size @size;
 }
 
-// triangle-double
+// arrow
 // -------------------------
-.triangle-double(@direction: down, @size: 10px, @color: #000, @borderColor: #c00){
+.arrow(@direction: down, @size: 10px, @color: #000, @borderColor: #c00){
   position: absolute;
   width: 0;
   height: 0;
@@ -383,7 +383,7 @@
     font-size: 0;
   }
 }
-.triangle-double(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = down){
+.arrow(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = down){
   border-color: @borderColor transparent transparent transparent;
   border-style: solid dashed dashed dashed;
   border-width: @size @size 0 @size;
@@ -395,7 +395,7 @@
     border-width: @size @size 0 @size;
   }
 }
-.triangle-double(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = left){
+.arrow(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = left){
   border-color: transparent @borderColor transparent transparent;
   border-style: dashed solid dashed dashed;
   border-width: @size @size @size 0;
@@ -407,7 +407,7 @@
     border-width: @size @size @size 0;
   }
 }
-.triangle-double(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = up){
+.arrow(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = up){
   border-color: transparent transparent @borderColor transparent;
   border-style: dashed dashed solid dashed;
   border-width: 0 @size @size @size;
@@ -419,7 +419,7 @@
     border-width: 0 @size @size @size;
   }
 }
-.triangle-double(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = right){
+.arrow(@direction: down, @size: 10px, @color: #fff, @borderColor: #ccc) when (@direction = right){
   border-color: transparent transparent transparent @borderColor;
   border-style: dashed dashed dashed solid;
   border-width: @size 0 @size @size;
