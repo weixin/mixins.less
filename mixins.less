@@ -1,6 +1,6 @@
 //----------------------------
 //
-//  mixins.less v0.1.5
+//  mixins.less v0.1.6
 //  http://mixinsless.com/
 //  Reuse snippets & Cross-browser private properties snippets.
 //----------------------------
@@ -337,7 +337,7 @@
   display: @display;
 }
 
-// triangle
+// Triangle
 // -------------------------
 .triangle(@direction: down, @size: 10px, @color: #000){
   display: inline-block;
@@ -368,7 +368,7 @@
   border-width: @size 0 @size @size;
 }
 
-// arrow
+// Arrow
 // -------------------------
 .arrow(@direction: down, @size: 10px, @color: #000, @borderColor: #c00){
   position: absolute;
@@ -432,3 +432,9 @@
   }
 }
 
+// fix background-image with `./img/xxx.png` in REM support option.
+.rem-bg(){
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
